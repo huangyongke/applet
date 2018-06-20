@@ -1,0 +1,16 @@
+
+<view class='header'>
+  <view class='start_time'>开始时间:{{start_time}}</view>
+  <view class='end_time'>结束时间:{{end_time}}</view>
+</view>
+<view class="content" >
+    <view class="plan">{{content}}</view>
+    <!-- <textarea class="plan" value='{{content}}' maxlength="1000"  placeholder=""  /> -->
+</view>
+<view class='edit_footer'>
+  <image class='edit_image' src='../../image/edit.png' bindtap='editPlan'></image>
+  <icon type='clear' size='35' bindtap='clearPlan'></icon>
+</view>
+
+
+

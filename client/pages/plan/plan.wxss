@@ -1,0 +1,77 @@
+/* pages/plan/plan.wxss */
+
+
+.section{
+   margin:20rpx;
+   padding:20rpx;
+  
+}
+.picker{
+    width: 500rpx;
+    margin: 20rpx;
+    padding: 10px;
+    min-height: 20rpx;
+    position:relative;
+    font-size: 30rpx;
+    font-family: 'Open Sans', sans-serif;
+    color: #4A4A4A ;
+    display: inline-block;
+    background: -webkit-gradient(linear, 0% 20%, 0% 1000%, from(#fff), to(#fff), color-stop(.1,#f3f3f3));
+    border: 1px solid #ccc;
+       
+}
+.plan-edit{
+   margin: 20rpx auto;
+    width: 600rpx;
+    min-height: 150rpx;
+    padding: 10rpx;
+    font-size: 30rpx;
+    font-family: 'Open Sans', sans-serif;
+    color: #4A4A4A ;
+    position:relative;
+    background: -webkit-gradient(linear, 0% 20%, 0% 92%, from(#fff), to(#f3f3f3), color-stop(.1,#fff));
+    border-top: 1rpx solid #ccc;
+    border-right: 1rpx solid #ccc;
+    border-left: 1rpx solid #ccc;
+    -webkit-border-top-left-radius: 60rpx 5rpx;
+    -webkit-border-top-right-radius: 6r0px 5rpx;
+    -webkit-border-bottom-right-radius: 60rpx 60rpx ;
+    -webkit-box-shadow: 0rpx 0rpx 12rpx rgba(0, 0, 0, 0.3) ;
+}
+.plan-edit:before{
+    content:'';    
+    width: 25rpx;
+    height: 20rpx;
+    position: absolute;
+    bottom:0;
+    right:0;
+    -webkit-border-bottom-right-radius: 30rpx;
+    -webkit-box-shadow: -2rpx -2rpx 5rpx rgba(0, 0, 0, 0.3);
+    -webkit-transform:
+    rotate(-20deg)
+    skew(-40deg,-3deg)
+    translate(-13px,-13px);
+}
+
+.plan-edit:after{
+    content: '';
+    z-index: -10;
+    width: 100rpx;
+    height: 100rpx;
+    position:absolute;
+    bottom:0;
+    right:0;
+    background: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    -webkit-box-shadow: 20rpx 20rpx 8rpx rgba(0, 0, 0, 0.2);
+    -webkit-transform: rotate(0deg)
+                        translate(-45rpx,-20rpx)
+                           skew(20deg);
+}
+.done{
+  margin-left: 600rpx;
+}
+
+
+
+

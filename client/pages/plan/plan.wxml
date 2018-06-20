@@ -1,0 +1,38 @@
+
+<view class="section">
+  <picker mode="date" value="{{start_date}}"  bindchange="bindStartDateChange">
+    <view class="picker">
+      开始日期： {{start_date}}
+    </view>
+  </picker>  
+  <picker mode="time" value="{{start_time}}" start="00:00" end="23:59" bindchange="bindStartTimeChange">  
+    <view class="picker">  
+      开始时间:       {{start_time}}
+    </view>  
+  </picker>  
+</view>  
+
+
+<view class="plan-edit">
+    <textarea class="plan" value='{{content}}' maxlength="1000" bindinput='onInput'/>
+</view>
+
+<view class="section">
+  <picker mode="date" value="{{end_date}}"  bindchange="bindEndDateChange">
+    <view class="picker">
+      预计完成日期： {{end_date}}
+    </view>
+  </picker>  
+  <picker mode="time" value="{{end_time}}" start="00:00" end="23:59" bindchange="bindEndTimeChange">  
+    <view class="picker">  
+      预计完成时间:       {{end_time}}
+    </view>  
+  </picker>  
+</view>
+
+<icon  class="done" type="success" size="35" bindtap='done'/>
+
+
+
+   
+
